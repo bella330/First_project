@@ -1,0 +1,18 @@
+<!-- result.html --> 
+
+
+<h1 style=" color:purple; font-size: 50;"> Result </h1>
+
+<h3 style=" color:purple; font: size 30;"> 당신이 입력한 텍스트는 {{ total }} 단어로 구성되어 있습니다. </h3>
+<br>
+<h3 style=" color:purple; font: size 30;"> 입력한 텍스트 </h3>
+{{ inputtext }}
+<br>
+<br>
+<h3 style=" color:purple; font: size 30;"> 단어 카운트 <h3>
+<!-- '단어' : '단어 나온 횟수' -->
+
+{% for word, frequency in dictionary %}
+{{word}} - {{frequency}}
+<br>
+{% endfor %}
